@@ -5,60 +5,104 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 30px 20px;
+            color: #222;
         }
 
-        h1 {
-            font-size: 48px;
+        .mainWrap {
+            width: 900px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px;
+            box-sizing: border-box;
+            border: 1px solid #e7e7e7;
+            border-radius: 18px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+        }
+
+        .titleBox {
+            text-align: center;
+            margin-bottom: 22px;
+        }
+
+        .titleBox h1 {
+            margin: 0;
+            font-size: 34px;
             font-weight: bold;
-            margin-bottom: 20px;
+            color: #2b2b2b;
+        }
+
+        .titleBox p {
+            margin: 8px 0 0 0;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .tableCard {
+            background: #fff;
+            border: 1px solid #ececec;
+            border-radius: 16px;
+            padding: 20px;
         }
 
         table {
             border-collapse: collapse;
+            margin: auto;
         }
 
         td {
-            width: 45px;
-            height: 45px;
-            border: 1px solid gray;
+            width: 50px;
+            height: 40px;
+            border: 1px solid #ffffff;
             text-align: center;
-            font-size: 28px;
+            font-size: 24px;
             font-weight: bold;
+            border-radius: 6px;
         }
 
-        .yellow {
-            background-color: yellow;
+        .softPink {
+            background-color: #ffeceb;
+            color: #d45c4f;
         }
 
-        .red {
-            background-color: red;
+        .softPeach {
+            background-color: #fff4ee;
+            color: #b85b3f;
         }
     </style>
 </head>
 <body>
 
-<h1>Multiplication Table</h1>
+<div class="mainWrap">
+    <div class="titleBox">
+        <h1>Multiplication Table</h1>
+        <p>APPLICATIN DEVELPOMENT SUMMATIEV</p>
+    </div>
 
-<table>
-<?php
-for ($row = 0; $row <= 10; $row++) {
-    echo "<tr>";
+    <div class="tableCard">
+        <table>
+        <?php
+        for ($row = 0; $row <= 10; $row++) {
+            echo "<tr>";
 
-    for ($col = 0; $col <= 10; $col++) {
-        $answer = $row * $col;
+            for ($col = 0; $col <= 10; $col++) {
+                $answer = $row * $col;
 
-        if (($row + $col) % 2 == 0) {
-            echo "<td class='yellow'>" . $answer . "</td>";
-        } else {
-            echo "<td class='red'>" . $answer . "</td>";
+                if (($row + $col) % 2 == 0) {
+                    echo "<td class='softPink'>" . $answer . "</td>";
+                } else {
+                    echo "<td class='softPeach'>" . $answer . "</td>";
+                }
+            }
+
+            echo "</tr>";
         }
-    }
-
-    echo "</tr>";
-}
-?>
-</table>
+        ?>
+        </table>
+    </div>
+</div>
 
 </body>
 </html>
