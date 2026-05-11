@@ -144,27 +144,71 @@
         }
 
         .output {
-            margin-top: 25px;
-            padding: 18px;
-            border: 1px solid #bbb;
-            background: #fafafa;
+            margin-top: 30px;
+            background: #ffffff;
+            border: 1px solid #e7e7e7;
+            border-radius: 18px;
+            padding: 24px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
         }
 
         .output h2 {
-            text-align: center;
-            margin-top: 0;
-            font-size: 22px;
+            text-align: left;
+            margin: 0 0 18px 0;
+            font-size: 28px;
+            font-weight: bold;
+            color: #2b2b2b;
         }
 
-        .output h3 {
-            margin-bottom: 8px;
-            margin-top: 16px;
-            font-size: 15px;
+        .output-pill {
+            display: inline-block;
+            background: #fff3ee;
+            color: #f28c6f;
+            border-radius: 999px;
+            padding: 8px 14px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        .output-grid {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .output-card {
+            background: #fff;
+            border: 1px solid #ececec;
+            border-radius: 16px;
+            padding: 18px 20px;
+            box-sizing: border-box;
+            width: calc(50% - 8px);
+        }
+
+        .output-card.full-width {
+            width: 100%;
+        }
+
+        .output-card h3 {
+            margin: 0 0 12px 0;
+            font-size: 16px;
+            color: #f28c6f;
+            font-weight: bold;
         }
 
         .output p {
-            margin: 5px 0;
-            font-size: 13px;
+            margin: 7px 0;
+            font-size: 14px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .output-label {
+            font-weight: bold;
+            color: #222;
         }
     </style>
 </head>
@@ -351,6 +395,7 @@
 
     </form>
 
+    
     <?php
     if (isset($_POST["submit"])) {
 
@@ -385,43 +430,53 @@
         }
 
         echo "<div class='output'>";
-        echo "<h2>Student Registration Output</h2>";
+        echo "<h2>Submitted Information</h2>";
 
+        echo "<div class='output-grid'>";
+
+        echo "<div class='output-card'>";
         echo "<h3>Personal Information</h3>";
-        echo "<p>First Name: " . $firstName . "</p>";
-        echo "<p>Middle Name: " . $middleName . "</p>";
-        echo "<p>Last Name: " . $lastName . "</p>";
-        echo "<p>Full Name: " . $fullName . "</p>";
-        echo "<p>Place of Birth: " . $biiiiirthPlis . "</p>";
-        echo "<p>Date of Birth: " . $bertDate . "</p>";
-        echo "<p>Age: " . $age . "</p>";
-        echo "<p>Nationality: " . $nationality . "</p>";
-        echo "<p>Student ID No.: " . $studID . "</p>";
-        echo "<p>Email: " . $email . "</p>";
-        echo "<p>Gender: " . $gender . "</p>";
-        echo "<p>Phone: " . $phone . "</p>";
-        echo "<p>Address: " . $address . "</p>";
+        echo "<p><span class='output-label'>First Name:</span> " . $firstName . "</p>";
+        echo "<p><span class='output-label'>Middle Name:</span> " . $middleName . "</p>";
+        echo "<p><span class='output-label'>Last Name:</span> " . $lastName . "</p>";
+        echo "<p><span class='output-label'>Full Name:</span> " . $fullName . "</p>";
+        echo "<p><span class='output-label'>Place of Birth:</span> " . $biiiiirthPlis . "</p>";
+        echo "<p><span class='output-label'>Date of Birth:</span> " . $bertDate . "</p>";
+        echo "<p><span class='output-label'>Age:</span> " . $age . "</p>";
+        echo "<p><span class='output-label'>Nationality:</span> " . $nationality . "</p>";
+        echo "<p><span class='output-label'>Student ID No.:</span> " . $studID . "</p>";
+        echo "<p><span class='output-label'>Email:</span> " . $email . "</p>";
+        echo "<p><span class='output-label'>Gender:</span> " . $gender . "</p>";
+        echo "<p><span class='output-label'>Phone:</span> " . $phone . "</p>";
+        echo "<p><span class='output-label'>Address:</span> " . $address . "</p>";
+        echo "</div>";
 
+        echo "<div class='output-card'>";
         echo "<h3>Educational Background</h3>";
-        echo "<p>Previous School: " . $prevSchool . "</p>";
-        echo "<p>School Address: " . $schoolAdd . "</p>";
-        echo "<p>Year Graduated: " . $yearGraduated . "</p>";
-        echo "<p>General Average: " . $genAve . "</p>";
-        echo "<p>Track / Strand: " . $trackStrand . "</p>";
-        echo "<p>School / University: " . $currentSchool . "</p>";
-        echo "<p>Course: " . $course . "</p>";
-        echo "<p>Year Level: " . $yearLvl . "</p>";
-        echo "<p>School Year: " . $schoolYear . "</p>";
+        echo "<p><span class='output-label'>Previous School:</span> " . $prevSchool . "</p>";
+        echo "<p><span class='output-label'>School Address:</span> " . $schoolAdd . "</p>";
+        echo "<p><span class='output-label'>Year Graduated:</span> " . $yearGraduated . "</p>";
+        echo "<p><span class='output-label'>General Average:</span> " . $genAve . "</p>";
+        echo "<p><span class='output-label'>Track / Strand:</span> " . $trackStrand . "</p>";
+        echo "<p><span class='output-label'>School / University:</span> " . $currentSchool . "</p>";
+        echo "<p><span class='output-label'>Course:</span> " . $course . "</p>";
+        echo "<p><span class='output-label'>Year Level:</span> " . $yearLvl . "</p>";
+        echo "<p><span class='output-label'>School Year:</span> " . $schoolYear . "</p>";
+        echo "</div>";
 
+        echo "</div>";
+
+        echo "<div class='output-card full-width'>";
         echo "<h3>Formatted Output</h3>";
-        echo "<p>Full Name in UPPERCASE: " . strtoupper($fullName) . "</p>";
-        echo "<p>Full Name in lowercase: " . strtolower($fullName) . "</p>";
-        echo "<p>Full Name in Name Case: " . ucwords(strtolower($fullName)) . "</p>";
-        echo "<p>Nationality in UPPERCASE: " . strtoupper($nationality) . "</p>";
-        echo "<p>Email in lowercase: " . strtolower($email) . "</p>";
-        echo "<p>Address in Name Case: " . ucwords(strtolower($address)) . "</p>";
-        echo "<p>Course in UPPERCASE: " . strtoupper($course) . "</p>";
-        echo "<p>Phone Number Length: " . strlen($phone) . "</p>";
+        echo "<p><span class='output-label'>Full Name in UPPERCASE:</span> " . strtoupper($fullName) . "</p>";
+        echo "<p><span class='output-label'>Full Name in lowercase:</span> " . strtolower($fullName) . "</p>";
+        echo "<p><span class='output-label'>Full Name in Name Case:</span> " . ucwords(strtolower($fullName)) . "</p>";
+        echo "<p><span class='output-label'>Nationality in UPPERCASE:</span> " . strtoupper($nationality) . "</p>";
+        echo "<p><span class='output-label'>Email in lowercase:</span> " . strtolower($email) . "</p>";
+        echo "<p><span class='output-label'>Address in Name Case:</span> " . ucwords(strtolower($address)) . "</p>";
+        echo "<p><span class='output-label'>Course in UPPERCASE:</span> " . strtoupper($course) . "</p>";
+        echo "<p><span class='output-label'>Phone Number Length:</span> " . strlen($phone) . "</p>";
+        echo "</div>";
 
         echo "</div>";
     }
