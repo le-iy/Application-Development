@@ -18,11 +18,12 @@
             box-sizing: border-box;
         }
 
-        .mainTitle {
+        .mgaSummativesNiLei {
             margin: 0 0 35px 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 38px;
             font-weight: bold;
-            color: #111;
+            color: #882121d5;
             text-align: center;
         }
 
@@ -34,8 +35,8 @@
         }
 
         .summativeCard {
-            width: 190px;
-            height: 110px;
+            width: 250px;
+            height: 150px;
             background-color: white;
             border-radius: 18px;
             box-shadow: 0 6px 16px rgba(255, 182, 193, 0.35);
@@ -68,20 +69,20 @@
 <body>
 
 <div class="pageWrap">
-    <h1 class="mainTitle">MGA SUMMATIVES NI LEI &gt;:3</h1>
+    <h1 class="mgaSummativesNiLei">MGA SUMMATIVES NI LEI &gt;:3</h1>
 
     <div class="cardHolder">
         <a href="SA1_1.php" class="summativeCard">
             <div class="cardText">
-                <h2>SUMMATIVE 1</h2>
-                <p>1: Student Form</p>
+                <h2>SUMMATIVE 1: 1</h2>
+                <p>Student Form</p>
             </div>
         </a>
 
         <a href="SA1_2.php" class="summativeCard">
             <div class="cardText">
-                <h2>SUMMATIVE 1</h2>
-                <p>2: Multiplicatodn Tabel</p>
+                <h2>SUMMATIVE 1: 2</h2>
+                <p>Multiplicatodn Tabel</p>
             </div>
         </a>
     </div>
