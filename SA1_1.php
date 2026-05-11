@@ -25,6 +25,15 @@
             margin-bottom: 20px;
         }
 
+        .logoPic {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 10px auto;
+            border-radius: 50%;
+        }
+
         .title h1 {
             font-size: 24px;
             margin: 0;
@@ -164,6 +173,7 @@
 <div class="container">
 
     <div class="title">
+        <img src="https://i.pinimg.com/736x/d6/94/de/d694deb596d8f2e7166c2c1bcc3c9c6a.jpg" alt="Logo" class="logoPic">
         <h1>Student Registration Form</h1>
         <p>Student Information and Educational Background</p>
     </div>
@@ -192,12 +202,12 @@
 
                     <div class="field">
                         <label>Place of Birth</label>
-                        <input type="text" name="placeOfBirth" required>
+                        <input type="text" name="biiiiirthPlis" required>
                     </div>
 
                     <div class="field">
                         <label>Date of Birth</label>
-                        <input type="date" name="birthDate" required>
+                        <input type="date" name="bertDate" required>
                     </div>
 
                     <div class="field">
@@ -214,7 +224,7 @@
                 <div class="col">
                     <div class="field">
                         <label>Student ID No.</label>
-                        <input type="text" name="studentId" required>
+                        <input type="text" name="studID" required>
                     </div>
 
                     <div class="field">
@@ -252,12 +262,12 @@
                 <div class="col">
                     <div class="field">
                         <label>Previous School</label>
-                        <input type="text" name="previousSchool" required>
+                        <input type="text" name="prevSchool" required>
                     </div>
 
                     <div class="field">
                         <label>School Address</label>
-                        <input type="text" name="schoolAddress" required>
+                        <input type="text" name="schoolAdd" required>
                     </div>
                 </div>
 
@@ -269,7 +279,7 @@
 
                     <div class="field">
                         <label>General Average</label>
-                        <input type="text" name="generalAverage" required>
+                        <input type="text" name="genAve" required>
                     </div>
                 </div>
             </div>
@@ -317,7 +327,7 @@
                 <div class="col">
                     <div class="field">
                         <label>Year Level</label>
-                        <select name="yearLevel" required>
+                        <select name="yearLvl" required>
                             <option value="">Select...</option>
                             <option value="1st Year">1st Year</option>
                             <option value="2nd Year">2nd Year</option>
@@ -348,24 +358,24 @@
         $middleName = $_POST["middleName"];
         $lastName = $_POST["lastName"];
 
-        $placeOfBirth = $_POST["placeOfBirth"];
-        $birthDate = $_POST["birthDate"];
+        $biiiiirthPlis = $_POST["biiiiirthPlis"];
+        $bertDate = $_POST["bertDate"];
         $age = $_POST["age"];
         $nationality = $_POST["nationality"];
-        $studentId = $_POST["studentId"];
+        $studID = $_POST["studID"];
         $email = $_POST["email"];
         $gender = $_POST["gender"];
         $phone = $_POST["phone"];
         $address = $_POST["address"];
 
-        $previousSchool = $_POST["previousSchool"];
-        $schoolAddress = $_POST["schoolAddress"];
+        $prevSchool = $_POST["prevSchool"];
+        $schoolAdd = $_POST["schoolAdd"];
         $yearGraduated = $_POST["yearGraduated"];
-        $generalAverage = $_POST["generalAverage"];
+        $genAve = $_POST["genAve"];
         $trackStrand = $_POST["trackStrand"];
         $currentSchool = $_POST["currentSchool"];
         $course = $_POST["course"];
-        $yearLevel = $_POST["yearLevel"];
+        $yearLvl = $_POST["yearLvl"];
         $schoolYear = $_POST["schoolYear"];
 
         if ($middleName != "") {
@@ -382,25 +392,25 @@
         echo "<p>Middle Name: " . $middleName . "</p>";
         echo "<p>Last Name: " . $lastName . "</p>";
         echo "<p>Full Name: " . $fullName . "</p>";
-        echo "<p>Place of Birth: " . $placeOfBirth . "</p>";
-        echo "<p>Date of Birth: " . $birthDate . "</p>";
+        echo "<p>Place of Birth: " . $biiiiirthPlis . "</p>";
+        echo "<p>Date of Birth: " . $bertDate . "</p>";
         echo "<p>Age: " . $age . "</p>";
         echo "<p>Nationality: " . $nationality . "</p>";
-        echo "<p>Student ID No.: " . $studentId . "</p>";
+        echo "<p>Student ID No.: " . $studID . "</p>";
         echo "<p>Email: " . $email . "</p>";
         echo "<p>Gender: " . $gender . "</p>";
         echo "<p>Phone: " . $phone . "</p>";
         echo "<p>Address: " . $address . "</p>";
 
         echo "<h3>Educational Background</h3>";
-        echo "<p>Previous School: " . $previousSchool . "</p>";
-        echo "<p>School Address: " . $schoolAddress . "</p>";
+        echo "<p>Previous School: " . $prevSchool . "</p>";
+        echo "<p>School Address: " . $schoolAdd . "</p>";
         echo "<p>Year Graduated: " . $yearGraduated . "</p>";
-        echo "<p>General Average: " . $generalAverage . "</p>";
+        echo "<p>General Average: " . $genAve . "</p>";
         echo "<p>Track / Strand: " . $trackStrand . "</p>";
         echo "<p>School / University: " . $currentSchool . "</p>";
         echo "<p>Course: " . $course . "</p>";
-        echo "<p>Year Level: " . $yearLevel . "</p>";
+        echo "<p>Year Level: " . $yearLvl . "</p>";
         echo "<p>School Year: " . $schoolYear . "</p>";
 
         echo "<h3>Formatted Output</h3>";
