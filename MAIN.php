@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mga Summatives ni Lei</title>
+    <title>APPLICATION DEVELOPMENT: Courseworks</title>
     <style>
         body {
             margin: 0;
@@ -33,7 +33,7 @@
             justify-content: center;
         }
 
-        .summativeCard {
+        .cardss {
             width: 190px;
             height: 110px;
             background-color: white;
@@ -48,7 +48,7 @@
             transition: transform 0.15s ease;
         }
 
-        .summativeCard:hover {
+        .cardss:hover {
             transform: translateY(-3px);
         }
 
@@ -68,20 +68,41 @@
 <body>
 
 <div class="pageWrap">
-    <h1 class="mainTitle">MGA SUMMATIVES NI LEI &gt;:3</h1>
+    <h1 class="mainTitle">APPLICATION DEVELOPMENT: Courseworks</h1>
 
     <div class="cardHolder">
-        <a href="SA1_1.php" class="summativeCard">
+        <a href="SA1_1.php" class="cardss">
             <div class="cardText">
                 <h2>SUMMATIVE 1</h2>
                 <p>1: Student Form</p>
             </div>
         </a>
 
-        <a href="SA1_2.php" class="summativeCard">
+        <a href="SA1_2.php" class="cardss">
             <div class="cardText">
                 <h2>SUMMATIVE 1</h2>
                 <p>2: Multiplicatodn Tabel</p>
+            </div>
+        </a>
+
+        <a href="FA3_1.php" class="cardss">
+            <div class="cardText">
+                <h2>FORMATIVE 3</h2>
+                <p>Number 1</p>
+            </div>
+        </a>
+
+        <a href="FA3_2.php" class="cardss">
+            <div class="cardText">
+                <h2>FORMATIVE 3</h2>
+                <p>Number 2</p>
+            </div>
+        </a>
+
+        <a href="FA3_3.php" class="cardss">
+            <div class="cardText">
+                <h2>FORMATIVE 3</h2>
+                <p>Number 3</p>
             </div>
         </a>
     </div>
