@@ -1,13 +1,11 @@
-<div class="bio-card">
-    <img src="images/character3.jpg" alt="Character 3">
+<div class="story-box">
+    <img src="image_bank/Xiao_Icon.webp">
 
-    <div class="bio-text">
-        <h2>Character Name 3</h2>
+    <h3>Xiao (魈)</h3>
 
-        <p>
-            Character Name 3 is a brave and loyal character who values friendship.
-            They continue moving forward even when things become difficult.
-            Their biography shows how kindness and courage can make a person inspiring.
-        </p>
-    </div>
+    <p>
+        He is an adeptus, under the name Alatus (Chinese: 金鹏 Jīnpéng),
+        and the sole surviving member of the five foremost Yakshas
+        dispatched by Morax to subdue the demonic spirits that plagued Liyue.
+    </p>
 </div>
