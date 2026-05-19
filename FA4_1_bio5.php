@@ -1,13 +1,12 @@
-<div class="bio-card">
-    <img src="images/character5.jpg" alt="Character 5">
+<div class="story-box">
+    <img src="image_bank/Klee_Icon.webp">
 
-    <div class="bio-text">
-        <h2>Character Name 5</h2>
+    <h3>Klee</h3>
 
-        <p>
-            Character Name 5 is an energetic and hopeful character.
-            They bring positivity to the people around them and try to see the good in every situation.
-            Their story shows the value of hope, effort, and self-belief.
-        </p>
-    </div>
+    <p>
+        The daughter of the intrepid and often quite destructive
+        adventurer Alice, Klee takes after her mother in many
+        ways, much to the dismay of the Knights of Favonius whom
+        she has been entrusted to.
+    </p>
 </div>
