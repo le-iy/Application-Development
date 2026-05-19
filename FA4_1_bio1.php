@@ -1,13 +1,12 @@
-<div class="bio-card">
-    <img src="images/character1.jpg" alt="Character 1">
+<div class="story-box">
+    <img src="image_bank/Yanfei_Icon.webp">
 
-    <div class="bio-text">
-        <h2>Character Name 1</h2>
+    <h3>Yanfei (烟绯)</h3>
 
-        <p>
-            Character Name 1 is known for being calm, thoughtful, and determined.
-            This character often faces challenges with patience and courage.
-            Their story shows the importance of staying strong even during difficult situations.
-        </p>
-    </div>
+    <p>
+        A half-illuminated beast and highly-skilled legal adviser.
+        She devotes herself to protecting the fairness of contracts in
+        Liyue with her identity as a legal adviser and her unique
+        experience and methods.
+    </p>
 </div>
