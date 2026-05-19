@@ -1,7 +1,7 @@
-<!DOCTYPE html>
 <html>
 <head>
     <title>APPLICATION DEVELOPMENT: Courseworks</title>
+
     <style>
         body {
             margin: 0;
@@ -18,106 +18,113 @@
             box-sizing: border-box;
         }
 
-        .mgaSummativesNiLei {
+        .mainTitle {
             margin: 0 0 35px 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 38px;
             font-weight: bold;
-            color: #882121d5;
+            color: #511a68d5;
             text-align: center;
         }
 
-        .cardHolder {
-            display: flex;
-            gap: 28px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .cardss {
-            width: 190px;
-            height: 110px;
+        .menuBox {
+            width: 80%;
             background-color: white;
-            border-radius: 18px;
-            box-shadow: 0 6px 16px rgba(255, 182, 193, 0.35);
-            text-decoration: none;
-            color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            border: 3px solid #511a68d5;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 6px 16px #edcbfed5;
+        }
+
+        .menuTitle {
             text-align: center;
-            transition: transform 0.15s ease;
+            color: #511a68d5;
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-family: 'Seravek', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        .cardss:hover {
-            transform: translateY(-3px);
+        details {
+            margin-bottom: 15px;
         }
 
-        .cardText h2 {
-            margin: 0;
+        summary {
+            background-color: #f4e4fcd5;
+            padding: 10px 15px;
             font-size: 20px;
             font-weight: bold;
-            letter-spacing: 0.5px;
+            color: #511a68d5;
+            cursor: pointer;
+            list-style: none;
         }
 
-        .cardText p {
-            margin: 6px 0 0 0;
-            font-size: 14px;
+        summary:hover {
+            background-color: #fff0f0;
+        }
+
+        .linkList {
+            margin-top: 8px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .linkList a {
+            text-decoration: none;
+            color: #511a68d5;
+            border: 2px solid #511a68d5;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 18px;
+            background-color: #fff;
+        }
+
+        .linkList a:hover {
+            background-color: #ffe6f3;
         }
     </style>
 </head>
+
 <body>
 
 <div class="pageWrap">
-    <h1 class="mainTitle">APPLICATION DEVELOPMENT: Courseworks</h1>
 
-    <div class="cardHolder">
+    <div class="menuBox">
 
-    <? /*Summative1 */ ?>
-        <a href="SA1_1.php" class="cardss">
-            <div class="cardText">
-                <h2>SUMMATIVE 1: 1</h2>
-                <p>Student Form</p>
-            </div>
-        </a>
+        <h1 class="menuTitle">APPLICATION DEVELOPMENT: Courseworks</h1>
 
-        <a href="SA1_2.php" class="cardss">
-            <div class="cardText">
-                <h2>SUMMATIVE 1: 2</h2>
-                <p>Multiplicatodn Tabel</p>
-            </div>
-        </a>
+        <details>
+            <summary>SA1</summary>
 
-    <? /*Forma3 */ ?>
-        <a href="FA3_1.php" class="cardss">
-            <div class="cardText">
-                <h2>FORMATIVE 3</h2>
-                <p>Number 1</p>
+            <div class="linkList">
+                <a href="SA1_1.php">#1 Student Form</a>
+                <a href="SA1_2.php">#2 Multiplication Table</a>
             </div>
-        </a>
+        </details>
 
-        <a href="FA3_2.php" class="cardss">
-            <div class="cardText">
-                <h2>FORMATIVE 3</h2>
-                <p>Number 2</p>
-            </div>
-        </a>
+        <details>
+            <summary>FA3</summary>
 
-        <a href="FA3_3.php" class="cardss">
-            <div class="cardText">
-                <h2>FORMATIVE 3</h2>
-                <p>Number 3</p>
+            <div class="linkList">
+                <a href="FA3_1.php">#1</a>
+                <a href="FA3_2.php">#2</a>
+                <a href="FA3_3.php">#3</a>
             </div>
-        </a>
-    
-    <? /*Forma4 */ ?>
-        <a href="FA4_1_index.php" class="cardss">
-            <div class="cardText">
-                <h2>FORMATIVE 4</h2>
-                <p>2 items</p>
+        </details>
+
+        <details>
+            <summary>FA4</summary>
+
+            <div class="linkList">
+                <a href="FA4_1_INDEX.php">#1 Character Stories</a>
+                <a href="FA4_2.php">#2 String Functions</a>
             </div>
-        </a>
+        </details>
+
     </div>
+
 </div>
 
 </body>
