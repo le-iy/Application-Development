@@ -1,7 +1,7 @@
 body {
     font-family: Georgia, serif;
-    background-color: #F5E9E2;
-    color: #160029;
+    background-color: #E6EFF7;
+    color: #3A2D34;
     margin: 0;
     padding: 40px;
 }
@@ -13,35 +13,37 @@ header {
 
 h1 {
     margin: 0;
-    color: #160029;
+    color: #3F2A52;
     font-size: 36px;
+    letter-spacing: 2px;
 }
 
 table {
     width: 95%;
     margin: auto;
-    background-color: #F5E9E2;
-    color: #160029;
+    background-color: #E6EFF7;
+    color: #3A2D34;
+    border-collapse: collapse;
 }
 
 th {
-    border: 2px solid #160029;
+    border: 2px solid #3A2D34;
     padding: 10px;
     font-size: 20px;
-    background-color: #c47f90;
-    color: #ffffff;
+    background-color: #75619D;
+    color: #E6EFF7;
 }
 
 td {
-    border: 2px solid #160029;
+    border: 2px solid #3A2D34;
     padding: 10px;
     text-align: center;
     font-size: 17px;
 }
 
 .table-title {
-    background-color: #773344;
-    color: #ffffff;
+    background-color: #3F2A52;
+    color: #E6EFF7;
     font-size: 28px;
     padding: 12px;
 }
@@ -50,13 +52,13 @@ td img {
     width: 120px;
     height: 120px;
     object-fit: contain;
-    background-color: white;
+    background-color: #E6EFF7;
 }
 
 tr:nth-child(even) {
-    background-color: #dab2bc;
+    background-color: #BEAEDB;
 }
 
 tr:nth-child(odd) {
-    background-color: #f6e1e7;
+    background-color: #E6EFF7;
 }
