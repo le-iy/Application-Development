@@ -1,13 +1,14 @@
-<div class="bio-card">
-    <img src="images/character4.jpg" alt="Character 4">
+<div class="story-box">
+    <img src="image_bank/Hu_Tao_Icon.webp">
 
-    <div class="bio-text">
-        <h2>Character Name 4</h2>
+    <h3>Hu Tao (胡桃)</h3>
 
-        <p>
-            Character Name 4 is a quiet but dependable character.
-            They may not always speak a lot, but their actions show care and responsibility.
-            This character reminds others that support can be shown in simple ways.
-        </p>
-    </div>
+    <p>
+        Hu Tao's antics and eccentricity belie her role as
+        the 77th Director of the Wangsheng Funeral Parlor
+        and her talent as a poet. Nevertheless, she treats
+        the parlor's operations with utmost importance, and
+        holds funeral ceremonies with the highest dignity
+        and solemnity.
+    </p>
 </div>
