@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F6FFEA;
+    margin: 0;
+    padding: 0;
+    color: #310405;
+}
+
+header {
+    background-color: #310405;
+    color: #F6FFEA;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.bio-card {
+    background-color: white;
+    border: 2px solid #310405;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.bio-card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #310405;
+}
+
+.bio-text h2 {
+    margin-top: 0;
+    color: #310405;
+}
+
+.bio-text p {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: #310405;
+    color: #F6FFEA;
+    padding: 15px;
+    margin-top: 30px;
+}
