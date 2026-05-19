@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 30px;
+    color: #310405;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 105px;
+    height: 105px;
+    object-fit: contain;
+    border: none;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #310405;
+    margin: 0;
+}
+
+table {
+    width: 85%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #f5f5f5;
+    table-layout: fixed;
+}
+
+th {
+    background-color: #310405;
+    color: #f5f5f5;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #310405;
+}
+
+td {
+    border: 1px solid #310405;
+    padding: 12px;
+    font-size: 14px;
+    color: #310405;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 8%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 20%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 18%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 10%;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+    width: 24%;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+    width: 20%;
+}
+
+.student-img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border: 2px solid #310405;
+}
