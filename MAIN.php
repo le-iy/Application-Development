@@ -34,15 +34,9 @@
             justify-content: center;
         }
 
-<<<<<<< HEAD
-        .summativeCard {
-            width: 250px;
-            height: 150px;
-=======
         .cardss {
             width: 190px;
             height: 110px;
->>>>>>> c9dc00b912463ad778241a1109f6adda96298ee1
             background-color: white;
             border-radius: 18px;
             box-shadow: 0 6px 16px rgba(255, 182, 193, 0.35);
@@ -75,11 +69,7 @@
 <body>
 
 <div class="pageWrap">
-<<<<<<< HEAD
-    <h1 class="mgaSummativesNiLei">MGA SUMMATIVES NI LEI &gt;:3</h1>
-=======
     <h1 class="mainTitle">APPLICATION DEVELOPMENT: Courseworks</h1>
->>>>>>> c9dc00b912463ad778241a1109f6adda96298ee1
 
     <div class="cardHolder">
         <a href="SA1_1.php" class="cardss">
