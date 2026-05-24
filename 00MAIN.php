@@ -96,6 +96,25 @@
         <h1 class="menuTitle">APPLICATION DEVELOPMENT: Courseworks</h1>
 
         <details>
+            <summary>FA1</summary>
+
+            <div class="linkList">
+                <a href="FA1.php">#1</a>
+            </div>
+        </details>
+
+        <details>
+            <summary>FA2</summary>
+
+            <div class="linkList">
+                <a href="FA2_1A.php">#1</a>
+                <a href="FA2_1B.php">#2</a>
+                <a href="FA2_2.php">#3</a>
+                <a href="FA2_3.php">#4</a>
+            </div>
+        </details>
+
+        <details>
             <summary>SA1</summary>
 
             <div class="linkList">
