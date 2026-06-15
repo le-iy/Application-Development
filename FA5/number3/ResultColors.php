@@ -1,13 +1,7 @@
 <?php
 session_start();
 
-if (
-    !isset($_SESSION["fave_color1"]) ||
-    !isset($_SESSION["fave_color2"]) ||
-    !isset($_SESSION["fave_color3"]) ||
-    !isset($_SESSION["fave_color4"]) ||
-    !isset($_SESSION["fave_color5"])
-) {
+if (!isset($_SESSION["fave_color1"])) {
     header("Location: FavoriteColor.php");
     exit();
 }
