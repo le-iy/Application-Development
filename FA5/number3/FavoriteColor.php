@@ -17,7 +17,7 @@
 <html>
 <head>
     <title>Formative 5</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../fa5_css.css">
 </head>
 <body>
 
@@ -31,82 +31,27 @@
 
             <div class="session-row">
                 <label>Favorite color 1:</label>
-                <select name="fave_color1">
-                    <option value=""></option>
-                    <option value="Red">Red</option>
-                    <option value="Green">Green</option>
-                    <option value="Yellow">Yellow</option>
-                    <option value="Blue">Blue</option>
-                    <option value="Violet">Violet</option>
-                    <option value="Orange">Orange</option>
-                    <option value="Brown">Brown</option>
-                    <option value="Gray">Gray</option>
-                    <option value="Rainbow">Rainbow</option>
-                </select>
+                <input type="text" name="fave_color1">
             </div>
 
             <div class="session-row">
                 <label>Favorite color 2:</label>
-                <select name="fave_color2">
-                    <option value=""></option>
-                    <option value="Red">Red</option>
-                    <option value="Green">Green</option>
-                    <option value="Yellow">Yellow</option>
-                    <option value="Blue">Blue</option>
-                    <option value="Violet">Violet</option>
-                    <option value="Orange">Orange</option>
-                    <option value="Brown">Brown</option>
-                    <option value="Gray">Gray</option>
-                    <option value="Rainbow">Rainbow</option>
-                </select>
+                <input type="text" name="fave_color2">
             </div>
 
             <div class="session-row">
                 <label>Favorite color 3:</label>
-                <select name="fave_color3">
-                    <option value=""></option>
-                    <option value="Red">Red</option>
-                    <option value="Green">Green</option>
-                    <option value="Yellow">Yellow</option>
-                    <option value="Blue">Blue</option>
-                    <option value="Violet">Violet</option>
-                    <option value="Orange">Orange</option>
-                    <option value="Brown">Brown</option>
-                    <option value="Gray">Gray</option>
-                    <option value="Rainbow">Rainbow</option>
-                </select>
+                <input type="text" name="fave_color3">
             </div>
 
             <div class="session-row">
                 <label>Favorite color 4:</label>
-                <select name="fave_color4">
-                    <option value=""></option>
-                    <option value="Red">Red</option>
-                    <option value="Green">Green</option>
-                    <option value="Yellow">Yellow</option>
-                    <option value="Blue">Blue</option>
-                    <option value="Violet">Violet</option>
-                    <option value="Orange">Orange</option>
-                    <option value="Brown">Brown</option>
-                    <option value="Gray">Gray</option>
-                    <option value="Rainbow">Rainbow</option>
-                </select>
+                <input type="text" name="fave_color4">
             </div>
 
             <div class="session-row">
                 <label>Favorite color 5:</label>
-                <select name="fave_color5">
-                    <option value=""></option>
-                    <option value="Red">Red</option>
-                    <option value="Green">Green</option>
-                    <option value="Yellow">Yellow</option>
-                    <option value="Blue">Blue</option>
-                    <option value="Violet">Violet</option>
-                    <option value="Orange">Orange</option>
-                    <option value="Brown">Brown</option>
-                    <option value="Gray">Gray</option>
-                    <option value="Rainbow">Rainbow</option>
-                </select>
+                <input type="text" name="fave_color5">
             </div>
         </div>
 
