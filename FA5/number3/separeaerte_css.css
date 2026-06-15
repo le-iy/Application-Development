@@ -108,24 +108,6 @@ input[type="submit"]:hover {
 
 
 
-.cookie-container {
-    width: 430px;
-    margin: 30px auto;
-    display: grid;
-    row-gap: 25px;
-    border: 1.5px solid #222222;
-    padding: 50px;
-}
-
-.cookie-container b {
-    color: #ff6b4a;
-    font-weight: 700;
-}
-
-
-
-
-
 .session-container {
     width: 560px;
     margin: 70px auto;
@@ -176,8 +158,8 @@ input[type="submit"]:hover {
     color: #111111;
 }
 
-.color-item {
-    margin-top: 25px;
+.colorsss {
+    font-weight: 700;
 }
 
 .picture-img {
