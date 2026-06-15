@@ -1,17 +1,35 @@
 <?php
-    session_start();
+session_start();
 
-    if (isset($_POST["submitbttn"])) {
+$error = "";
 
-        $_SESSION["fave_color1"] = $_POST["fave_color1"];
-        $_SESSION["fave_color2"] = $_POST["fave_color2"];
-        $_SESSION["fave_color3"] = $_POST["fave_color3"];
-        $_SESSION["fave_color4"] = $_POST["fave_color4"];
-        $_SESSION["fave_color5"] = $_POST["fave_color5"];
+if (isset($_POST["submitbttn"])) {
+
+    $color1 = $_POST["fave_color1"];
+    $color2 = $_POST["fave_color2"];
+    $color3 = $_POST["fave_color3"];
+    $color4 = $_POST["fave_color4"];
+    $color5 = $_POST["fave_color5"];
+
+    if (
+        preg_match("/^#[a-fA-F0-9]{6}$/", $color1) &&
+        preg_match("/^#[a-fA-F0-9]{6}$/", $color2) &&
+        preg_match("/^#[a-fA-F0-9]{6}$/", $color3) &&
+        preg_match("/^#[a-fA-F0-9]{6}$/", $color4) &&
+        preg_match("/^#[a-fA-F0-9]{6}$/", $color5)
+    ) {
+        $_SESSION["fave_color1"] = $color1;
+        $_SESSION["fave_color2"] = $color2;
+        $_SESSION["fave_color3"] = $color3;
+        $_SESSION["fave_color4"] = $color4;
+        $_SESSION["fave_color5"] = $color5;
 
         header("Location: ResultColors.php");
         exit();
+    } else {
+        $error = "Please enter valid hex colors only. Example: #ff0000";
     }
+}
 ?>
 
 <html>
@@ -29,29 +47,35 @@
         <div class="session-form">
             <div class="session-title">Enter your favorite colors</div>
 
+            <?php
+            if ($error != "") {
+                echo "<p style='color:red; font-weight:bold;'>$error</p>";
+            }
+            ?>
+
             <div class="session-row">
                 <label>Favorite color 1:</label>
-                <input type="text" name="fave_color1">
+                <input type="text" name="fave_color1" placeholder="#ff0000">
             </div>
 
             <div class="session-row">
                 <label>Favorite color 2:</label>
-                <input type="text" name="fave_color2">
+                <input type="text" name="fave_color2" placeholder="#0000ff">
             </div>
 
             <div class="session-row">
                 <label>Favorite color 3:</label>
-                <input type="text" name="fave_color3">
+                <input type="text" name="fave_color3" placeholder="#ffc0cb">
             </div>
 
             <div class="session-row">
                 <label>Favorite color 4:</label>
-                <input type="text" name="fave_color4">
+                <input type="text" name="fave_color4" placeholder="#008000">
             </div>
 
             <div class="session-row">
                 <label>Favorite color 5:</label>
-                <input type="text" name="fave_color5">
+                <input type="text" name="fave_color5" placeholder="#ffff00">
             </div>
         </div>
 
