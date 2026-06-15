@@ -213,7 +213,8 @@
                 <a href="FA5/number1/main_get.php">Number 1A: GET</a>
                 <a href="FA5/number1/main_post.php">Number 1B: POST</a>
                 <a href="FA5/number2/set_ck.php">Number 2: Cookie :D</a>
-                <a href="FA5/number3/FavoriteColor.php">Number 3: Favoritye Colors</a>
+                <a href="FA5/number3/FavoriteColor.php">Number 3A: Favoritye Colors</a>
+                <a href="FA5/number3/ResultColors.php">Number 3B: Result Colors</a>
             </div>
         </details>
 
