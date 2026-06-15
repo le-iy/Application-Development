@@ -38,6 +38,12 @@ form {
     row-gap: 7px;
 }
 
+
+.form-row .error {
+    color: rgb(201, 33, 33);
+}
+
+
 label {
     font-size: 14px;
     font-weight: bold;
