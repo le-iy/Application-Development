@@ -17,7 +17,7 @@
 <html>
 <head>
     <title>Formative 5</title>
-    <link rel="stylesheet" href="../fa5_css.css">
+    <link rel="stylesheet" href="separeaerte_css.css">
 </head>
 <body>
 
@@ -25,7 +25,7 @@
     <h2>Formative 5</h2>
     <p class="subtitle">Number 3</p>
 
-    <form method="post" action="FavoriteColor.php">
+    <form method="post" action="ResultColors.php">
         <div class="session-form">
             <div class="session-title">Enter your favorite colors</div>
 
