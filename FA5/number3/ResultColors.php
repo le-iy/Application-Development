@@ -25,23 +25,23 @@ if (!isset($_SESSION["fave_color1"])) {
         
         <h3>My Favorite Colors</h3>
 
-        <div style="color: <?php echo $_SESSION["fave_color1"]; ?>;">
+        <div class="colorsss" style="color: <?php echo $_SESSION["fave_color1"]; ?>;">
             My Favorite Color 1: <?php echo $_SESSION["fave_color1"]; ?>
         </div>
 
-        <div style="color: <?php echo $_SESSION["fave_color2"]; ?>;">
+        <div class="colorsss" style="color: <?php echo $_SESSION["fave_color2"]; ?>;">
             My Favorite Color 2: <?php echo $_SESSION["fave_color2"]; ?>
         </div>
 
-        <div style="color: <?php echo $_SESSION["fave_color3"]; ?>;">
+        <div class="colorsss" style="color: <?php echo $_SESSION["fave_color3"]; ?>;">
             My Favorite Color 3: <?php echo $_SESSION["fave_color3"]; ?>
         </div>
 
-        <div style="color: <?php echo $_SESSION["fave_color4"]; ?>;">
+        <div class="colorsss" style="color: <?php echo $_SESSION["fave_color4"]; ?>;">
             My Favorite Color 4: <?php echo $_SESSION["fave_color4"]; ?>
         </div>
 
-        <div style="color: <?php echo $_SESSION["fave_color5"]; ?>;">
+        <div class="colorsss" style="color: <?php echo $_SESSION["fave_color5"]; ?>;">
             My Favorite Color 5: <?php echo $_SESSION["fave_color5"]; ?>
         </div>
     </div>
