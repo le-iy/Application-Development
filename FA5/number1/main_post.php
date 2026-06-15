@@ -7,32 +7,91 @@
 
 <div class="container">
     <h2>Formative 5</h2>
-    <p class="subtitle">Number 2</p>
+    <p class="subtitle">Number 1</p>
+
+    <?php
+        $fname = $mname = $lname = $bday = $addr = "";
+        $fnameErr = $mnameErr = $lnameErr = $bdayErr = $addrErr = "";
+        $valid = true;
+
+        if (isset($_POST['submitbtn'])) {
+            $fname = $_POST['firstname'];
+            $mname = $_POST['middlename'];
+            $lname = $_POST['lastname'];
+            $bday = $_POST['birthdate'];
+            $addr = $_POST['address'];
+
+            /*pragma guied
+            az, AZ, 0-9, tapos pag symbols, -, pag hashes may \
+            */
+            if (empty($fname)) {
+                $fnameErr = "First name is required.";
+                $valid = false;
+            } elseif (!preg_match("/^[a-zA-Z- ]+$/", $fname)) {
+                $fnameErr = "Only letters, dash, and spaces are allowed.";
+                $valid = false;
+            }
+
+            if (empty($mname)) {
+                $mnameErr = "Middle name is required.";
+                $valid = false;
+            } elseif (!preg_match("/^[a-zA-Z- ]*$/", $mname)) {
+                $mnameErr = "Only letters, dash, and spaces are allowed.";
+                $valid = false;
+            }
+
+            if (empty($lname)) {
+                $lnameErr = "Last name is required.";
+                $valid = false;
+            } elseif (!preg_match("/^[a-zA-Z- ]*$/", $lname)) {
+                $lnameErr = "Only letters, dash, and spaces are allowed.";
+                $valid = false;
+            }
+
+            if (empty($bday)) {
+                $bdayErr = "Date of birth is required.";
+                $valid = false;
+            } elseif (strtotime($bday) == false) {
+                $bdayErr = "Enter a valid date. Example: January 1 2005";
+                $valid = false;
+            }
+
+            if (empty($addr)) {
+                $addrErr = "Address is required.";
+                $valid = false;
+            }
+        }
+    ?>
 
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
         <div class="form-row">
             <label>First Name <span class="required_symbl">*</span></label>
-            <input type="text" name="firstname" placeholder="Enter your first name">
+            <input type="text" name="firstname" placeholder="Enter your first name" value="<?php echo $fname; ?>">
+            <span class="error"><?php echo $fnameErr; ?></span>
         </div>
 
         <div class="form-row">
             <label>Middle Name <span class="required_symbl">*</span></label>
-            <input type="text" name="middlename" placeholder="Enter your middle name">
+            <input type="text" name="middlename" placeholder="Enter your middle name" value="<?php echo $mname; ?>">
+            <span class="error"><?php echo $mnameErr; ?></span>
         </div>
 
         <div class="form-row">
             <label>Last Name <span class="required_symbl">*</span></label>
-            <input type="text" name="lastname" placeholder="Enter your last name">
+            <input type="text" name="lastname" placeholder="Enter your last name" value="<?php echo $lname; ?>">
+            <span class="error"><?php echo $lnameErr; ?></span>
         </div>
 
         <div class="form-row">
             <label>Date of Birth <span class="required_symbl">*</span></label>
-            <input type="text" name="birthdate" placeholder="Month Day Year">
+            <input type="text" name="birthdate" placeholder="Month Day Year" value="<?php echo $bday; ?>">
+            <span class="error"><?php echo $bdayErr; ?></span>
         </div>
 
         <div class="form-row">
             <label>Address <span class="required_symbl">*</span></label>
-            <input type="text" name="address" placeholder="Enter your address">
+            <input type="text" name="address" placeholder="Enter your address" value="<?php echo $addr; ?>">
+            <span class="error"><?php echo $addrErr; ?></span>
         </div>
 
         <div class="button-row">
@@ -41,12 +100,7 @@
     </form>
 
     <?php
-        if (isset($_POST['submitbtn'])) {
-            $fname = $_POST['firstname'];
-            $mname = $_POST['middlename'];
-            $lname = $_POST['lastname'];
-            $bday = $_POST['birthdate'];
-            $addr = $_POST['address'];
+        if (isset($_POST['submitbtn']) && $valid == true) {
     ?>
 
     <div class="result-box">
@@ -59,7 +113,7 @@
     </div>
 
     <?php
-    }
+        }
     ?>
 </div>
 
