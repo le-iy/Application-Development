@@ -45,6 +45,17 @@
             font-family: 'Seravek', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+
+        .menuSubTitle {
+            text-align: center;
+            color: #000000d5;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-family: 'Seravek', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
         details {
             margin-bottom: 15px;
         }
@@ -84,6 +95,45 @@
         .linkList a:hover {
             background-color: #ffe6f3;
         }
+
+
+
+
+        .summaryv2 {
+            background-color: #dadada;
+            padding: 10px 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #2b2b2bd5;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        .summaryv2:hover {
+            background-color: #dadada;
+        }
+        
+        .linkListv2 {
+            margin-top: 8px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .linkListv2 a {
+            text-decoration: none;
+            color: #000000d5;
+            border: 2px solid #888888d5;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 18px;
+            background-color: #fff;
+        }
+
+        .linkListv2 a:hover {
+            background-color: #fff;
+        }
     </style>
 </head>
 
@@ -94,6 +144,8 @@
     <div class="menuBox">
 
         <h1 class="menuTitle">APPLICATION DEVELOPMENT: Courseworks</h1>
+
+        <h3 class="menuSubTitle">MIDTERMS SZN ( 'o')</h3>
 
         <details>
             <summary>FA1</summary>
@@ -149,6 +201,19 @@
                 <a href="SA2_1.php">Number 1</a>
                 <a href="SA2_2.php">Number 2</a>
                 <a href="SA2_3_0-MAIN.php">Number 3</a>
+            </div>
+        </details>
+
+        <h3 class="menuSubTitle">FINALS SZN xp</h3>
+
+        <details>
+            <summary class="summaryv2">FA5</summary>
+
+            <div class="linkListv2">
+                <a href="FA5/number1/main_get.php">Number 1A: GET</a>
+                <a href="FA5/number1/main_post.php">Number 1B: POST</a>
+                <a href="FA5/number2/set_ck.php">Number 2: Cookie :D</a>
+                <a href="FA5/number3/FavoriteColor.php">Number 3: Favoritye Colors</a>
             </div>
         </details>
 
