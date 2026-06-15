@@ -30,27 +30,27 @@ if (isset($_POST["submitbttn"])) {
 
             <div class="session-row">
                 <label>Favorite color 1:</label>
-                <input type="text" name="fave_color1" placeholder="red or #ff0000">
+                <input type="text" name="fave_color1">
             </div>
 
             <div class="session-row">
                 <label>Favorite color 2:</label>
-                <input type="text" name="fave_color2" placeholder="blue or #0000ff">
+                <input type="text" name="fave_color2">
             </div>
 
             <div class="session-row">
                 <label>Favorite color 3:</label>
-                <input type="text" name="fave_color3" placeholder="pink or #ffc0cb">
+                <input type="text" name="fave_color3">
             </div>
 
             <div class="session-row">
                 <label>Favorite color 4:</label>
-                <input type="text" name="fave_color4" placeholder="green or #008000">
+                <input type="text" name="fave_color4">
             </div>
 
             <div class="session-row">
                 <label>Favorite color 5:</label>
-                <input type="text" name="fave_color5" placeholder="yellow or #ffff00">
+                <input type="text" name="fave_color5">
             </div>
         </div>
 
