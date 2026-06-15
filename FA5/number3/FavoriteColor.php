@@ -25,7 +25,7 @@
     <h2>Formative 5</h2>
     <p class="subtitle">Number 3</p>
 
-    <form method="post" action="ResultColors.php">
+    <form method="post" action="FavoriteColor.php">
         <div class="session-form">
             <div class="session-title">Enter your favorite colors</div>
 
