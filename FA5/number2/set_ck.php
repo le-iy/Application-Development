@@ -4,8 +4,8 @@
     $lname = "Caabay";
 
     setcookie("fname_tensec", $fname, time() + 10);
-    setcookie("mname_tensec", $mname, time() + 10);
-    setcookie("lname_tensec", $lname, time() + 10);
+    setcookie("mname_tensec", $mname, time() + 20);
+    setcookie("lname_tensec", $lname, time() + 30);
 ?>
 
 <html>
