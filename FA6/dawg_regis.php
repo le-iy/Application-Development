@@ -1,6 +1,5 @@
 <?php require('backend.php'); ?>
 
-<!DOCTYPE html>
 <html>
 <head>
     <title>FA6 - Dog Register</title>
@@ -10,7 +9,7 @@
 
 <nav class="topbar">
     <div class="nav-container">
-        <a class="brand" href="register.php">FA6 Dog Information</a>
+        <a class="brand" href="dawg_regis.php">FA6 Dog Information</a>
 
         <div class="nav-links">
             <a href="dawg_regis.php">REGISTER</a>
@@ -41,23 +40,7 @@
 
                     <div class="form-group">
                         <label for="dawg_breed">Breed</label>
-                        <select name="dawg_breed" id="dawg_breed">
-                            <option value="">-- Select Breed --</option>
-                            <option value="Chow Chow">Chow Chow</option>
-                            <option value="Pug">Pug</option>
-                            <option value="Siberian Husky">Siberian Husky</option>
-                            <option value="Golden Retriever">Golden Retriever</option>
-                            <option value="Shih Tzu">Shih Tzu</option>
-                            <option value="Aspín">Aspín</option>
-                            <option value="Askal">Askal</option>
-                            <option value="Beagle">Beagle</option>
-                            <option value="Bulldog">Bulldog</option>
-                            <option value="Dalmatian">Dalmatian</option>
-                            <option value="German Shepherd">German Shepherd</option>
-                            <option value="Labrador Retriever">Labrador Retriever</option>
-                            <option value="Poodle">Poodle</option>
-                            <option value="Rottweiler">Rottweiler</option>
-                        </select>
+                        <input type="text" name="dawg_breed" id="dawg_breed">
                     </div>
 
                     <div class="form-group">
@@ -75,16 +58,7 @@
 
                     <div class="form-group">
                         <label for="dawg_color">Color</label>
-                        <select name="dawg_color" id="dawg_color">
-                            <option value="">-- Select Color --</option>
-                            <option value="Brown">Brown</option>
-                            <option value="White">White</option>
-                            <option value="Black">Black</option>
-                            <option value="Golden">Golden</option>
-                            <option value="Gray">Gray</option>
-                            <option value="Cream">Cream</option>
-                            <option value="Mixed">Mixed</option>
-                        </select>
+                        <input type="text" name="dawg_color" id="dawg_color">
                     </div>
 
                     <div class="form-group">
@@ -113,9 +87,7 @@
     </div>
 </div>
 
-<?php
-mysqli_close($conn);
-?>
+<?php mysqli_close($conn); ?>
 
 </body>
 </html>
