@@ -218,6 +218,15 @@
             </div>
         </details>
 
+        <details>
+            <summary class="summaryv2">FA6</summary>
+
+            <div class="linkListv2">
+                <a href="FA6/dawg_regis.php">Number 1: Register Dog</a>
+                <a href="FA6/dawg_view.php">Number 2: View Dog Records</a>
+            </div>
+        </details>
+
     </div>
 
 </div>
