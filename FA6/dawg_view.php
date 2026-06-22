@@ -1,6 +1,5 @@
 <?php require('backend.php'); ?>
 
-<!DOCTYPE html>
 <html>
 <head>
     <title>FA6 - Dog Records</title>
